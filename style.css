@@ -8,3 +8,53 @@
     text-decoration: none;
     list-style: none;
 }
+
+/* HEADER */
+header{
+    background-color: #00a2c6;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.navbar .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    padding: 0 10px;
+    color: #666666;
+}
+
+.navbar ul li::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: #666666;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover{
+    color: #666666;
+}
