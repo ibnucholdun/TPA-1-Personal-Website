@@ -13,7 +13,6 @@
 body {
     background-color: #19142a;
     color: #fff;
-    padding: 0 10%;
 }
 
 /* HEADER */
@@ -21,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 10%;
 }
 
 .navbar{
@@ -78,6 +77,7 @@ header .menu{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     align-items: center;
+    padding: 0 10%;
 }
 
 .hero-text h3{
@@ -104,11 +104,38 @@ header .menu{
     height: auto;
 }
 
+/* ABOUT SECTION */
+.about-section {
+    background-color: #2A2344;
+    height: 300px;
+    padding: 0 10%;
+    margin-top: 50px;
+}
+
+.about-section .container{
+    padding: 30px 0;
+    
+}
+
+.about-section .container h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-section .container h1 span{
+    color: #D5213A;
+    font-weight: 400;
+}
+
+.about-section .container p{
+    padding: 20px 0;
+    text-align: center;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px){
-    .navbar ul li{
-        padding: 0 10px;
-    }
+    /*HERO SECTION*/
     .hero-section{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -124,6 +151,11 @@ header .menu{
     }
     .hero-section .hero-img .profil{
         width: 50%;
+    }
+    
+    /* HEADER */
+    .navbar ul li{
+        padding: 0 10px;
     }
     header .menu{
         display: block;
@@ -147,7 +179,6 @@ header .menu{
     header .active{
         height: 300px;
         z-index: 1;
-
     }
     header .active ul{
         opacity: 1;
@@ -166,4 +197,17 @@ header .menu{
     header a img{
         width: 50px;
     }
+
+    /*ABOUT SECTION*/
+    .about-section{
+        height: auto;
+    }
+    .about-section .container h1{
+        font-size: 30px;
+    }
+    .about-section .container p{
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
 }
