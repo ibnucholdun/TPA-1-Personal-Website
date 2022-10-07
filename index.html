@@ -7,13 +7,14 @@
     <meta name="description" content="Personal Website yang mencakup berupa deskripsi singkat tentang saya, portfolio dan juga blog pribadi">
     <meta name="author" content="Ibnu Choldun">
     <title>Ibnu Choldun - Personal Website</title>
-    <link rel="icon" href="assets/favicon1.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="logo" width="70"></a>
+        <button class="menu" id="menu" aria-label="button menu dropdown on mobile">☰</button>
         <nav class="navbar">
-            <a href="index.html" class="logo">Ibnu Choldun</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="/Page/About Page/about.html">About</a></li>
@@ -22,7 +23,19 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="hero-section">
+            <div class="hero-text">
+                <h3>Welcome I'M</h3>
+                <h1>Ibnu Choldun</h1>
+                <p>Web Developer | Electrical Engineering</p>
+            </div>
+            <div class="hero-img">
+                <img src="assets/gambar1.png" alt="hero-img" class="profil">
+            </div>
+        </section>
+    </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>
