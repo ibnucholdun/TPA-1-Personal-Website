@@ -118,14 +118,16 @@ header .menu{
 }
 
 .about-section .container h1, 
-.portfolio-section .container h1{
+.portfolio-section .container h1,
+.blog-section .container h1{
     font-size: 48px;
     font-weight: 600;
     text-align: center;
 }
 
 .about-section .container h1 span, 
-.portfolio-section .container h1 span{
+.portfolio-section .container h1 span,
+.blog-section .container h1 span{
     color: #D5213A;
     font-weight: 400;
 }
@@ -199,13 +201,60 @@ header .menu{
     margin-top: 30px;
 }
 
-.container-button a{
+.container-button .button{
     display: inline-block;
     padding: 10px 20px;
     background-color: #D5213A;
     border-radius: 6px;
     color: #fff;
     font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* BLOG SECTION */
+.blog-section{
+    padding: 0 10%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card .card-blog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: #19142a;
+    position: relative;
+}
+
+.container-card .card-blog .title{
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    color: #51182D;
+}
+
+.container-card .card-blog .descript{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: 10px 0 20px;
+    color: #19142a;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container .container-card .card-blog .button{
+    padding: 5px 10px;
+    background-color: #D5213A;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -295,6 +344,12 @@ header .menu{
         width: 330px;
     }
 
+    /* BLOG SECTION */
+    .container-card .card-blog{
+        padding: 10px;
+        width: 330px;
+    }
+
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
@@ -306,4 +361,11 @@ header .menu{
         padding: 10px;
         width: 330px;
     }
+
+    /* BLOG SECTION */
+    .container-card .card-blog{
+        padding: 10px;
+        width: 330px;
+    }
+    
 }
