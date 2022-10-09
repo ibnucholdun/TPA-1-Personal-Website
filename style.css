@@ -144,6 +144,7 @@ header .menu{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container-card {
@@ -194,6 +195,7 @@ header .menu{
     padding: 10px;
     border-radius: 10px;
 }
+
 .container-button{
     display: flex;
     justify-content: center;
@@ -211,14 +213,19 @@ header .menu{
     font-weight: 500;
 }
 
+.container-button .button:hover,
+.container .container-card .card-blog .button:hover,
+.container-card .card .middle a:hover{
+    background-color: #51182D;
+}
 
 /* BLOG SECTION */
 .blog-section{
-    padding: 0 10%;
-    margin: 50px 0;
+    padding: 50px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #51182D;
 }
 
 .container-card .card-blog {
@@ -227,6 +234,11 @@ header .menu{
     border-radius: 10px;
     border: #19142a;
     position: relative;
+}
+
+.container-card .card-blog:hover{
+    box-shadow: 0 0 10px #19142a;
+    transform: scale(1.05);
 }
 
 .container-card .card-blog .title{
@@ -262,7 +274,6 @@ header .menu{
 footer{
     background-color: #2A2344;
     padding: 20px 10%;
-    margin-top: 50px;
 }
 
 footer .container{
@@ -292,6 +303,30 @@ footer .copy{
     font-weight: 300;
 }
 
+/* VECTOR */
+.vector1{
+    position: absolute;
+    top: 580px;
+    left: 0;
+    z-index: 3;
+    width: 50px;
+}
+
+.vector2{
+    position: absolute;
+    top: 1600px;
+    right: 0;
+    z-index: 3;
+    width: 50px;
+}
+
+.vector3{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 3;
+    width: 20px;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 768px){
     /*HERO SECTION*/
@@ -410,4 +445,10 @@ footer .copy{
         width: 330px;
     }
     
+}
+
+@media screen and (min-width: 300px) and (max-width: 426px){
+    .vector1, .vector2, .vector3{
+        display: none;
+    }
 }
