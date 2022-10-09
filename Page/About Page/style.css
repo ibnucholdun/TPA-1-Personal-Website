@@ -13,7 +13,6 @@
 body {
     background-color: #19142a;
     color: #fff;
-    padding: 0 10%;
 }
 
 /* HEADER */
@@ -21,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 10%;
 }
 
 .navbar{
@@ -72,6 +71,84 @@ header .menu{
     color: #666666;
 }
 
+/* ABOUT */
+.about{
+    padding: 20px 10%;
+    margin-bottom: 50px;
+}
+
+.about h1{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about h1 span {
+    color: #D5213A;
+    font-weight: 400;
+}
+
+.about .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+
+.about .container .about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .container .about-img img{
+    display: block;
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.about .container .about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* FOOTER */
+footer{
+    background-color: #2A2344;
+    padding: 20px 10%;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin: 20px 0 30px;
+}
+
+footer .container .nav, 
+footer .container .alamat{
+    display: flex;
+    justify-content: center;
+}
+footer .container .sosmed{
+    display: flex;
+    margin-top: 5px;
+}
+footer .container .contact a{
+    padding: 0 10px;
+}
+
+footer .copy{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 @media screen and (max-width: 768px){
     /* HEADER */
     header .menu{
@@ -114,5 +191,19 @@ header .menu{
     }
     header a img{
         width: 50px;
+    }
+
+    /* ABOUT */
+    .about .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* FOOTER */
+    footer .container{
+        grid-template-columns: 1fr;
+    }
+    footer .container .nav,
+    footer .container .alamat{
+        justify-content: start;
     }
 }

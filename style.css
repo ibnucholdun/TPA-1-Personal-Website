@@ -216,7 +216,9 @@ header .menu{
 .container-button .button:hover,
 .container .container-card .card-blog .button:hover,
 .container-card .card .middle a:hover{
-    background-color: #51182D;
+    color: #D5213A;
+    background-color: #fff;
+    border: 1px solid #D5213A;
 }
 
 /* BLOG SECTION */
